@@ -21,7 +21,6 @@ body{
     flex-direction: column;
     gap: 100px;
     background-color: #00000038;
-    overflow: hidden;
 }
 .background{
     position: fixed;
@@ -241,6 +240,88 @@ header > ul > li > a:hover::after {
         opacity: 0;
     }
 }
+
+/* Info section */
+.info-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.section-title{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.info-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+.card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    width: auto;
+    height: 40vh;
+    overflow: hidden;
+    border: 1px solid gray;
+    background-color: #080020b7;
+    border-radius: 20px;
+}
+.card img{
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+}
+.card h2{
+    position: absolute;
+    margin: 0;
+    bottom: 40%;
+    left: 5%;
+    font-size: 25px;
+    z-index: 1;
+    color: lightgray;
+}
+.card p{
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    z-index: 1;
+    max-width: 300px;
+    color: gray;
+    font-size: 13px;
+    line-height: 20px;
+}
+.card video{
+    margin-top: 10%;
+    width: 70%;
+    height: 50%;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+}
+.card button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #2200493d;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #727fde77;
+    box-shadow: 0 0 5px #727fde88;
+    transition: all .2s ease-in-out;
+}
+
+
+
+
 
 
 
