@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Geist Mono;
+    color: white;
 }
 
 .container{
@@ -24,6 +25,102 @@
     /* todo */
     mix-blend-mode: overlay;
 }
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+    background-color: rgba(132, 130, 130, 0.123);
+    padding: 0 30px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px #72a1de8d;
+    z-index: 9999;
+}
+
+.left{
+    font-size: 2rem;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left span {
+    /* color: #340fe7; */
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+header > ul > li > a {  
+    position: relative;
+    text-decoration: none;
+}
+header > ul > li > a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: blueviolet;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+header > ul > li > a:hover{
+    color: blueviolet;
+}
+
+header > ul > li > a:hover::after {
+  transform: translateX(-50%) scaleX(1.1);
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.links > a > i{
+    font-size: 1.6rem;
+    padding: 5px;
+}
+
+.links > a > i:hover{
+    color: blueviolet;
+}
+
+.blackhole{
+    position: absolute;
+    top:0;
+    width: 100%;
+    justify-content: center;
+    mix-blend-mode: lighten;
+}
+.blackhole video{
+    width: 100%;
+    margin-top: -23.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-aspect-ratio: 16/9) {
     .background{
