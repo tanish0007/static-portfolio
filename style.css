@@ -22,7 +22,7 @@
     bottom: 0;
     z-index: -1;
     /* todo */
-    /* mix-blend-mode: overlay; */
+    mix-blend-mode: overlay;
 }
 
 @media (max-aspect-ratio: 16/9) {
