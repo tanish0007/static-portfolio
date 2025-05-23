@@ -28,7 +28,7 @@ body{
     bottom: 0;
     z-index: -1;
     /* todo */
-    mix-blend-mode: lighten;
+    mix-blend-mode: overlay;
 }
 
 header{
@@ -146,6 +146,7 @@ header > ul > li > a:hover::after {
 .hero-info .info-title:hover {
     box-shadow: 0 0 15px #727fde88;
     background-color: #727fde88;
+    cursor: pointer;
 }
 
 .main-text{
@@ -246,7 +247,7 @@ header > ul > li > a:hover::after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 80%;
     margin-top: 100px;
 }
 
@@ -274,12 +275,14 @@ header > ul > li > a:hover::after {
     border: 1px solid gray;
     background-color: #080020b7;
     border-radius: 20px;
+    transition: .3s;
 }
 .card img{
     width: 80%;
-    height: 50%;
+    height: 80%;
     object-fit: cover;
 }
+
 .card h2{
     position: absolute;
     margin: 0;
@@ -298,27 +301,89 @@ header > ul > li > a:hover::after {
     color: gray;
     font-size: 13px;
     line-height: 20px;
+    font-size: .9rem;
+
 }
 .card video{
     margin-top: 10%;
     width: 70%;
-    height: 50%;
+    height: 70%;
     object-fit: cover;
     mix-blend-mode: lighten;
 }
 .card button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     border: none;
-    background-color: #2200493d;
+    background-color: #2901573d;
     color: white;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
     border: 1px solid #727fde77;
     box-shadow: 0 0 5px #727fde88;
-    transition: all .2s ease-in-out;
+    transition: .3s;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    z-index: 4;
+}
+.card button:hover {
+    box-shadow: 0 0 15px #727fde4d;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 0 0 15px rgba(211, 211, 211, 0.61);
 }
 
+.card:nth-child(3){
+    grid-row: span 2;
+    height: 82vh;
+}
+.card:nth-child(3) p {
+    bottom: 12%;
+    font-size: .9rem;
+}
+
+.card:nth-child(3) h2 {
+    bottom: 27%;
+}
+
+.card:nth-child(4){
+    grid-column: span 2;
+}
+.card:nth-child(4) h2{
+    bottom: 28%;
+}
+.card:nth-child(4) img{
+    margin-top: 3%;
+    height: 50%;
+}
+.card:nth-child(4) p{
+    max-width: 700px;
+    bottom: 8%;
+}
+.card:nth-child(1) img{
+    width: 56%;
+    height: 50%;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.card:nth-child(1) h2{
+    bottom: 28%;
+}
+.card:nth-child(2) h2{
+    bottom: 30%;
+}
+.card:nth-child(2) p{
+    bottom: 5%;
+}
+.card:nth-child(2) img{
+    width: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 60%;
+}
 
 
 
