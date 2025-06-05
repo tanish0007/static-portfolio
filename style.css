@@ -384,8 +384,94 @@ header > ul > li > a:hover::after {
 
 
 
+/* Project Section */
+.projects{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    /* height: 100vh; */
+    margin-top: 200px;
+    /* margin-bottom: 700px; */
+}
+.proj-box-title{
+    font-size: 1.8rem;
+    margin-bottom: 100px;
+}
+.project-card{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 5%;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.project-info .project-title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.image-box{
+    width: 100%;
+}
+.image-box img{
+    width: 40rem;
+    object-fit: cover;
+    box-shadow: 0 0 8px lightgray;
+    border-radius: 10px;
+}
+.link-buttons{
+    margin-top: 20px;
+}
+.github-link, .live-link{
+    background-color: black;
+    border: lightgray 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.github-link:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
 
+    i{color: black;}
+}
+.live-link:hover {
+    background-color: #6070fd;
+    box-shadow: 0 0 10px #6070fd;
+    color: white;
+    border-color: #6070fd;
+}
+.video-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    cursor: pointer;
+    min-width: 400px;
+    transition: 0.5s;
+    /* mix-blend-mode: difference; */
 
+}
+
+.video-box video{
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 0 10px lightgray;
+    border-radius: 20px;
+    transition: 0.5s;
+}
 
 
 
