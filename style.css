@@ -7,6 +7,10 @@
     font-family: Geist Mono;
     color: white;
 }
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
 
 body{
     background-color: #001f7c38;
@@ -661,6 +665,9 @@ fieldset{
     flex-direction: column;
     width: 100%;
 }
+fieldset legend{
+    font-weight: 500;
+}
 fieldset:hover{
     border-color: #6070fd;  
     legend{
@@ -677,21 +684,74 @@ fieldset:hover{
         right: 0;
         width: 70%;
         font-size: 1.3rem;
+        padding: 5px;
         padding-left: 10px;
-        color: black;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        color: white;
+        caret-color: #6070fd;
     }
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .contact-info fieldset label textarea {
     width: 700px;
     height: 300px;
     margin-top: 10px;
     font-size: 1.3rem;
-    color: black;
+    color: #6070fd;
     max-height: 300px;
     max-width: 700px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    caret-color: #6070fd;
+    padding: 10px;
+}
+.form-buttons button {
+    background-color: black;
+    color: white;
+    border: lightgray 1px solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .3s;
+    margin-right: 15px;
+    i{transition: .3s;}
 }
 
+.form-buttons button[type="submit"]:hover {
+    background-color: #6070fd;
+    box-shadow: 0 0 20px #6070fd;
+}
+.form-buttons button[type="reset"]:hover {
+    background-color: rgb(225, 85, 85);
+    box-shadow: 0 0 20px red;
+}
+
+
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    height: 70px;
+    background-color: rgba(23, 31, 53, 0.128);
+    backdrop-filter: blue(10px);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.356);
+    z-index: 999;
+}
+
+footer .social-links {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 20px;
+}
 
 
 
