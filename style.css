@@ -53,10 +53,6 @@ header{
     cursor: pointer;
 }
 
-.left span {
-    /* color: #340fe7; */
-}
-
 header > ul {
     list-style: none;
     display: flex;
