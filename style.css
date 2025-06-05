@@ -427,6 +427,10 @@ header > ul > li > a:hover::after {
     box-shadow: 0 0 8px lightgray;
     border-radius: 10px;
 }
+.image-box img:hover{
+    box-shadow: 0 0 15px white;
+}
+
 .link-buttons{
     margin-top: 20px;
 }
@@ -437,6 +441,9 @@ header > ul > li > a:hover::after {
     border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
+    transition: .3s;
+
+    i{transition: .3s;}
 }
 .github-link:hover{
     background-color: white;
