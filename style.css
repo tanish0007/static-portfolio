@@ -604,6 +604,98 @@ header > ul > li > a:hover::after {
 
 
 
+/* Contact Section */
+.contact-section {
+    width: 90%;
+    margin-bottom: 100px;
+}
+
+.contact-box{
+    padding: 3rem 3rem;
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+.contact-desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-desc .dev-image-box {
+    width: 25rem;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    padding: 2px;
+    display: flex;
+    align-items: start;
+    box-shadow: 0 0 10px white;
+    transition: 1s;
+}
+.contact-desc p {
+    max-width: 600px;
+    text-align: justify;
+}
+.contact-desc .dev-image-box img{
+    width: 30rem;
+    object-fit: contain;
+    transform: scale(1.01);
+    transition: 1s;
+}
+.dev-image-box:hover{
+    box-shadow: 0 0 20px white;
+}
+.dev-image-box:hover img{
+    transform: scale(1.1);
+}
+.contact-info{
+    width: 50%;
+}
+fieldset{
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+fieldset:hover{
+    border-color: #6070fd;  
+    legend{
+    color: #6070fd;
+    }
+}
+.contact-info fieldset label[for="firstname"], .contact-info fieldset label[for="lastname"], .contact-info fieldset label[for="email"], .contact-info fieldset label[for="message"] {
+    width: 100%;
+    font-size: 1.3rem;
+    position: relative;
+    height: fit-content;
+    input{
+        position: absolute;
+        right: 0;
+        width: 70%;
+        font-size: 1.3rem;
+        padding-left: 10px;
+        color: black;
+    }
+    margin-bottom: 10px;
+}
+.contact-info fieldset label textarea {
+    width: 700px;
+    height: 300px;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: black;
+    max-height: 300px;
+    max-width: 700px;
+}
+
+
+
+
+
 
 
 
