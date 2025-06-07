@@ -14,7 +14,6 @@ html{
 
 body{
     background-color: #001f7c38;
-
 }
 .container{
     position: relative;
@@ -720,14 +719,15 @@ fieldset:hover{
     margin-right: 15px;
     i{transition: .3s;}
 }
-
 .form-buttons button[type="submit"]:hover {
     background-color: #6070fd;
     box-shadow: 0 0 20px #6070fd;
+    border-color: #6070fd;
 }
 .form-buttons button[type="reset"]:hover {
     background-color: rgb(225, 85, 85);
-    box-shadow: 0 0 20px red;
+    box-shadow: 0 0 20px rgb(225, 85, 85);
+    border-color: rgb(225, 85, 85);
 }
 
 
@@ -813,9 +813,60 @@ footer .goto-top .icon-wrapper {
     }
 }
 
-
-
-
+/* Animations */
+.autoblur {
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view();
+}
+@keyframes autoBlurAnimation {
+    0% {
+        filter: blur(40px);
+        opacity: 0;
+    }
+    35%, 65% {
+        filter: blur(0);
+        opacity: 1;
+    }
+    100% {
+        filter: blur(40px);
+        opacity: 0;
+    }
+}
+.autodisplay {
+    animation: autoDisplayAnimation both;
+    animation-timeline: view();
+}
+@keyframes autoDisplayAnimation {
+    from{
+        filter: blur(10px);
+        transform: translateY(-200px) scale(0);
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0) scale(1);
+    }
+}
+.fadeInRight {
+    animation: fadeInAnimation both;
+    animation-timeline: view();
+}
+@keyframes fadeInAnimation {
+    0%{
+        opacity: 0;
+        transform: translateX(-500px);
+        filter: blur(20px);
+    }
+    35%, 65% {
+        opacity: 1;
+        transform: translateX(0px) scale(1);
+        filter: blur(0);
+    }
+    100%{
+        filter: blur(20px);
+    }
+}
 
 
 
